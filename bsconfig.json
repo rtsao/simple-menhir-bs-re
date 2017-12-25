@@ -19,10 +19,10 @@
           "name": "menhir",
           "edge": ["Parser.ml", "Parser.mli", ":", "Parser.mly"]
         },
-        /* {
+        {
           "name": "menhir2",
           "edge": ["Parser.messages", ":", "Parser.mly"]
-        }, */
+        },
         {
           "name": "menhir3",
           "edge": ["ParseErrors.ml", ":", "Parser.messages"]
@@ -39,11 +39,11 @@
       "name": "menhir",
       "command": "menhir --explain --table $in"
     },
-    /* {
+    {
       "name": "menhir2",
       // Note: needs moreutils, e.g. `brew install moreutils`
       "command": "menhir $in --update-errors $out | sponge $out"
-    }, */
+    },
     {
       "name": "menhir3",
       "command":

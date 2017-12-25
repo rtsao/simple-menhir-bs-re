@@ -1,0 +1,14 @@
+{
+  "name": "simple-menhir-bs-re",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world"
+  },
+  "main": "lib/js/src/Compiler.js",
+  "devDependencies": {
+    "bs-platform": "^2.1.0"
+  },
+  "license": "MIT"
+}

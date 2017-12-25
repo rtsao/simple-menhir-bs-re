@@ -1,0 +1,36 @@
+input: PLUS
+##
+## Ends in an error in state: 0.
+##
+## input' -> . input [ # ]
+##
+## The known suffix of the stack is as follows:
+##
+##
+
+Some parse error
+
+input: TWO PLUS PLUS
+##
+## Ends in an error in state: 8.
+##
+## statement_list -> _statement PLUS . statement_list [ EOF ]
+##
+## The known suffix of the stack is as follows:
+## _statement PLUS
+##
+
+Another parse error
+
+input: TWO TWO
+##
+## Ends in an error in state: 7.
+##
+## statement_list -> _statement . [ EOF ]
+## statement_list -> _statement . PLUS statement_list [ EOF ]
+##
+## The known suffix of the stack is as follows:
+## _statement
+##
+
+Yet another parse error

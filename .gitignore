@@ -1,0 +1,16 @@
+.opam
+.bsb.lock
+.merlin
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+node_modules/
+
+/lib/
+/src/Parser.mli
+/src/Parser.ml
+/src/Lexer.ml
+Parser.conflicts
+
+/bs.js
